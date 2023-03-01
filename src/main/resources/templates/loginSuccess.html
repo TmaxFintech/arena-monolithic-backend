@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  로그인 성공했습니다.
+  <br/>
+  접속 id는 <span th:text="${userId}"></span> 입니다.
+  <br/>
+  접속된 유저의 roles는 <span th:text="${userRoles}"></span> 입니다.
+  <br/>
+  <form method="post" action="/logout">
+    <button type="submit">로그아웃</button>
+  </form>
+</body>
+</html>

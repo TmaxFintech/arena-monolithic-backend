@@ -11,5 +11,4 @@ import java.util.UUID;
 public interface ArenaRepository extends JpaRepository<ArenaEntity, UUID> {
 
     ArenaEntity findByTitle(String title);
-
 }
